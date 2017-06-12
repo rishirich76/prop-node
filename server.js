@@ -18,11 +18,12 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 5001;
 var router = express.Router();
 //===============================API HIT HERE=============================
 router.post('/login', loginCtrl.login);
 router.post('/speechtext', aaCtrl.login);
+router.get('/test', aaCtrl.test);
 
 //========================================================================
 
